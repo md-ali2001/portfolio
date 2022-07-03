@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+      
+      .currentstatus
+      {
+        background-color:azure;
+        border: 3px solid red;
+         width: 1050px; 
+         height: 150px;
+         position: absolute;
+         top: 607px;
+         right: 1px;
+        
+         left: -153px;
+      }
+
+
+      .services
+      {
+  background-color:azure;
+        border: 3px solid red;
+         width: 1050px; 
+         height: 650px;
+         position: absolute;
+         top: 57px;
+         right: 1px;
+        
+         left: -153px;
+         
+      }
+      body
+      {
+        background-color: beige;
+      }
+        .spacing
+        {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+        .box{
+            width:250px;
+            text-align: top;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline;margin-left: 130px;">HIRE ME FORM</h1>
+    <form style="margin-left: 40px; border: 3px solid red; width: 500px; height: 700px;">
+        <div class="spacing" style="margin-left: 56px;">
+          <label  >YOUR NAME</label>
+          <input id="name" class="box" type="text" ><br>
+        </div>
+        
+          
+       <div class="spacing">
+          <label ></label>YOUR WHATSAPP</label>
+          <input id="number" class="box" type="number" ><br>
+
+        </div>
+
+        <div class="spacing">
+            <label ></label>SERVICE YOU WANT ( WRITE IN 5-10 WORDS )</label>
+            <br>
+            <textarea id="title" style="width:400px;height:70px" cols="30" rows="3"></textarea><br>
+  
+          </div>
+
+          <div class="spacing">
+            <label ></label>SERVICE YOU WANT ( WRITE DETAILED DESCRIPTION )</label>
+            <br>
+            <textarea id="description" style="width:450px;height:300px" cols="30" rows="3"></textarea><br>
+  
+          </div>
+
+          <h5 style="color:blue;margin-left: 23px;"> Submit this form , I will contact within a <br>day on your given whatsapp for the <br>detailed discussion</h5>
+       
+        
+        <button onclick="submit()"type="submit" style="margin-left: 210px;"><b>Submit</b></button>
+      </form>
+
+     <div 
+
+
+      <h3 style="position: absolute; bottom: 730px; left: 690px;font-size: 40px;text-decoration: underline;"><b>SERVICES I HAVE OFFERED</b></h3>
+
+      <div class="services">
+
+        <button id="reviewbutton" style="margin-left: 410px; font-size: 20px; position: absolute; top: 500px;"><b>Clients' Reviews</b> </button>
+      </div>
+
+     
+
+
+
+      <div class="currentstatus">
+<h4 style="margin-left:6px ;margin-top: 6px; color: green;text-decoration: underline;">CURRENT STATUS:</h4>
+
+      </div>
+</body>
+
+
+<script>
+    // import { initializeApp } from "firebase/app";
+// import { getFirestore } from "firebase/firestore";
+// import { getAnalytics } from "firebase/analytics";
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+const firebaseConfig = {
+  apiKey: "AIzaSyCGBD_zQAajKvKg23InlHHzCgXwsyiSKOQ",
+  authDomain: "my-website-ab30b.firebaseapp.com",
+  projectId: "my-website-ab30b",
+  storageBucket: "my-website-ab30b.appspot.com",
+  messagingSenderId: "545642908690",
+  appId: "1:545642908690:web:469a9d2be6d11dcd7a5ccb",
+  measurementId: "G-9TX2N2TFN3"
+};
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+// var firebase=firebase.firebase();
+// const db=firestore.collection("data");
+
+function submit()
+
+{
+  console.log('bbb');
+let name=document.getElementById('name').value
+
+db.doc(data).set(
+{
+    f:name
+}
+)
+}
+
+var h=document.getElementById("reviewbutton");
+        
+            h.addEventListener("click", reviews);
+        
+            function reviews()
+                        {
+                            console.log("a");
+                         location.href="reviews.html";
+                            
+                        } 
+                        
+                        
+
+
+</script>
+</html> 
